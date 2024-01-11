@@ -10,7 +10,10 @@ function displayCharacters() {}
 // Funció per ordenar els personatges
 function sortCharacters() {}
 
-// Aquesta funció és llançarà automàticament quan la pàgina es carregui. Fes les crides necessàries per mostrar els personatges.
+// Aquesta funció és llançarà automàticament quan la pàgina es carregui. Fes les crides necessàries per mostrar els personatges.ç
+// L'esdeveniment DOMContentLoaded s'executa quan el document HTML ha estat completament carregat i parsejat.
+// Fes-lo servir per llançar les funcions que necessitis per mostrar els personatges
+
 window.addEventListener('DOMContentLoaded', async () => {
   // També hauràs d'afegir l'event listener per quan es seleccioni un criteri d'ordenació i salti a la funció per mostrar  els personatges de manera ordenada
 });
