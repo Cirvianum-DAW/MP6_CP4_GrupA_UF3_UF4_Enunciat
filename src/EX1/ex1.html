@@ -4,16 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Wars API</title>
-    <style>
-      /* Aquí pots afegir els teus estils CSS */
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>Personatges de Star Wars</h1>
-    <ul id="character-list">
-      <!-- Aquí es mostraran els personatges -->
-    </ul>
-
+  <body class="bg-gray-200 py-8">
+    <h1 class="text-center text-4xl mb-8">Star Wars Characters</h1>
+    <div class="flex justify-center mb-8">
+      <label for="sort" class="text-2xl mr-2">Order by</label>
+      <select id="sort" class="border-2 border-gray-300 p-2 rounded-md">
+        <option value="name">Name</option>
+        <option value="species">Species</option>
+        <option value="homeworld">Homeworld</option>
+      </select>
+    </div>
+    <div
+      id="character-list"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 container mx-auto"
+    >
+      <!-- Aquí es mostraran les targetes dels personatges -->
+    </div>
     <script src="ex1.js"></script>
   </body>
 </html>
